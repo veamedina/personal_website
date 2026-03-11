@@ -201,6 +201,13 @@ section{
   color: #555;
 }
 
+/* Adds space between each quote */
+.hobby-quote p {
+    margin-bottom: 10px; 
+    font-style: italic;
+    color: #555;
+}
+
 /* Show quotes when hovering the Reading card */
 .card-reading:hover .hobby-quote {
   max-height: 300px;
