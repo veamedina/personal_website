@@ -318,7 +318,7 @@ footer{
 @media (min-width: 769px) {
     /* Hover expands quotes and images */
     .card-reading:hover .hobby-quote {
-        max-height: 300px;
+        max-height: 500px;
         opacity: 1;
         display: block;
     }
