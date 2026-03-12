@@ -33,22 +33,20 @@ function toggleElement(button, elementSelector) {
     const element = button.parentElement.querySelector(elementSelector);
     if (element.style.display === "block") {
         element.style.display = "none";
-        button.textContent = button.textContent.replace("Hide", "Show");
     } else {
         element.style.display = "block";
-        button.textContent = button.textContent.replace("Show", "Hide");
     }
 }
 
 // Toggle quotes/images for mobile
 document.querySelectorAll(".toggleQuoteBtn").forEach(button => {
     button.addEventListener("click", function() {
-        toggleElement(button, ".quoteText");
+        toggleElement(button, ".hobby-quote");
     });
 });
 document.querySelectorAll(".togglePhotoBtn").forEach(button => {
     button.addEventListener("click", function() {
-        toggleElement(button, ".imageContainer");
+        toggleElement(button, ".hobby-images");
     });
 });
 
