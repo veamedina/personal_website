@@ -27,6 +27,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// ---------------- Hybrid Mobile Toggle ----------------
+function toggleElement(button, elementSelector) {
+    const element = button.parentElement.querySelector(elementSelector);
+    if (element.style.display === "block") {
+        element.style.display = "none";
+        button.textContent = button.textContent.replace("Hide", "Show");
+    } else {
+        element.style.display = "block";
+        button.textContent = button.textContent.replace("Show", "Hide");
+    }
+}
+
+// Toggle quotes/images for mobile
+document.querySelectorAll(".toggleQuoteBtn").forEach(button => {
+    button.addEventListener("click", function() {
+        toggleElement(button, ".quoteText");
+    });
+});
+document.querySelectorAll(".togglePhotoBtn").forEach(button => {
+    button.addEventListener("click", function() {
+        toggleElement(button, ".imageContainer");
+    });
+});
+
 // Get audio elements and buttons
 const music1 = document.getElementById("Music1");
 const music2 = document.getElementById("Music2");
