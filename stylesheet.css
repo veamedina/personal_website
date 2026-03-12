@@ -369,8 +369,6 @@ footer{
     .hobby-quote {
         display: none;
         margin-top: 10px;
-        max-height: none;
-        opacity: 1;
     }
 
     /* Toggle images */

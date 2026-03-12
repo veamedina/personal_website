@@ -30,10 +30,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Hybrid Mobile Toggle
 function toggleElement(button, selector) {
-  const element = button.parentElement.querySelector(selector);
-
+  const card = button.closest('.card');
+  if (!card) return;
+  const element = card.querySelector(selector);
+  if (!element) return;
   const style = window.getComputedStyle(element);
-
   if (style.display === "none") {
     element.style.display = selector === ".hobby-images" ? "flex" : "block";
   } else {
