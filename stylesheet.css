@@ -372,11 +372,18 @@ footer{
 
     /* Toggle quotes */
     .hobby-quote {
+        display: none;
         margin-top: 10px;
         opacity: 0;
         max-height: 0px;
         overflow: hidden;
         transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+
+    .hobby-quote.show {
+        max-height: 500px;
+        opacity: 1;
+        display: block;
     }
 
     /* Toggle images */
@@ -385,11 +392,6 @@ footer{
         opacity: 1;
     }
 
-    .hobby-quote.show {
-        max-height: 500px;
-        opacity: 1;
-    }
-   
     /* Buttons to toggle content on mobile */
     .toggleQuoteBtn,
     .togglePhotoBtn {
