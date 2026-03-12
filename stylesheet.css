@@ -321,6 +321,7 @@ footer{
         max-height: 500px;
         opacity: 1;
         display: block;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
     }
 
     /* Images also appear on hover */
