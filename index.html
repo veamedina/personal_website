@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Personal Profile</title>
+  <title>My Personal Profile</title>
 
-<!-- Link to stylesheet-->
-<link rel="stylesheet" href="stylesheet.css">
+  <!-- Link to stylesheet-->
+  <link rel="stylesheet" href="stylesheet.css">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
 
- <!-- Link to external JavaScript file -->
-<script src="script.js" defer></script>
+  <!-- Link to external JavaScript file -->
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 <!-- Header with name and navigation -->
 <header>
-<h1>VEATRIX MARINIELLE MEDINA</h1>
-<p>MECHANICAL ENGINEER</p>
+  <h1>VEATRIX MARINIELLE MEDINA</h1>
+  <p>MECHANICAL ENGINEER</p>
 
-<nav>
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
+  <nav>
+      <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
 </header>
 
 <!-- About Me + Fun Fact  -->
@@ -54,68 +53,68 @@
       <p id="funFactText"></p>
       <button id="funFactBtn">Guess what?</button>
     </div>
+  </div>
 </section>
 
 <!-- Hobbies & Interests -->
 <section id="hobbies">
-    <h2>Hobbies & Interests</h2>
-    <div class="hobby-container">
+  <h2>Hobbies & Interests</h2>
+  <div class="hobby-container">
 
-  <!-- Reading Card -->
-  <div class="card card-reading">
-    <h3>📚 Reading</h3>
-    <p>
-      I enjoy philosophical, psychological, and young adult books, with favorites including Paulo Coelho, Mitch Albom, Mark Manson, Rainbow Rowell, Jeff Kinney, and Bob Ong. 
-      I’m always on the lookout for stories that make me think, feel, and see the world differently.
-    </p>
+    <!-- Reading Card -->
+    <div class="card card-reading">
+      <h3>📚 Reading</h3>
+      <p>
+        I enjoy philosophical, psychological, and young adult books, with favorites including Paulo Coelho, Mitch Albom, Mark Manson, Rainbow Rowell, Jeff Kinney, and Bob Ong. 
+        I’m always on the lookout for stories that make me think, feel, and see the world differently.
+      </p>
 
-    <!-- Quotes -->
-    <div class="hobby-quote">
-      <p>"The two hardest tests on the spiritual road are the patience to wait for the right moment and the courage not to be disappointed with what we encounter" – Paulo Coelho, <em>Veronika Decides to Die</em></p>
-      <p>"It is never too late or too soon. It is when it is supposed to be." – Mitch Alboom, <em>Time Keeper</em> </p>
+      <!-- Quotes -->
+      <div class="hobby-quote">
+        <p>"The two hardest tests on the spiritual road are the patience to wait for the right moment and the courage not to be disappointed with what we encounter" – Paulo Coelho, <em>Veronika Decides to Die</em></p>
+        <p>"It is never too late or too soon. It is when it is supposed to be." – Mitch Alboom, <em>Time Keeper</em> </p>
+      </div>
+    </div>
+
+     <!-- Photography -->
+     <div class="card card-photography">
+      <h3>📸 Photography</h3>
+        <p>Nature, scenery, loved ones—my photos are tiny keepsakes that make memories last a lifetime.</p>
+      <div class="hobby-images">
+        <img src="Image/hobby2.jpg" alt="Photo 1" class="hobby-image">
+        <img src="Image/pets.jpg" alt="Photo 2" class="hobby-image">
+        <img src="Image/scenery.jpg" alt="Photo 3" class="hobby-image">
+      </div>
+    </div>
+
+    <!-- Relaxation & Music Card -->
+    <div class="card card-unwind">
+      <h3>🎧 Relaxation & Music </h3>
+        <p>
+          I love slowing down with music and the beauty of the clouds above.
+          It’s my little escape to recharge and simply enjoy the moment.
+          Press play below to choose your favorite and let the music set a relaxed pace for your day. 🎶
+        </p>
+        <div class="hobby-images">
+          <img src="Image/nature.jpg" alt="Nature view" class="hobby-image">
+        </div>
+
+      <!-- Music Button Section -->
+      <div class="music-control">
+        <button id="musicBtn1">▶ Play "For Always"</button>
+        <button id="musicBtn2">▶ Play "Back to Friends"</button>
+      </div>
+
+      <!-- This stores the music file that will be controlled using JavaScript -->
+      <audio id="Music1">
+        <source src="music/for-always.mp3" type="audio/mpeg">
+      </audio>
+
+      <audio id="Music2">
+        <source src="music/back-to-friends.mp3" type="audio/mpeg">
+      </audio>
     </div>
   </div>
-
-  <!-- Photography -->
-  <div class="card card-photography">
-    <h3>📸 Photography</h3>
-    <p>Nature, scenery, loved ones—my photos are tiny keepsakes that make memories last a lifetime.</p>
-
-    <div class="hobby-images">
-      <img src="Image/hobby2.jpg" alt="Photo 1" class="hobby-image">
-      <img src="Image/pets.jpg" alt="Photo 2" class="hobby-image">
-      <img src="Image/scenery.jpg" alt="Photo 3" class="hobby-image">
-    </div>
-  </div>
-
-  <!-- Relaxation & Music Card -->
-  <div class="card card-unwind">
-    <h3>🎧 Relaxation & Music</h3>
-    <p>
-    I love slowing down with music and the beauty of the clouds above.
-    It’s my little escape to recharge and simply enjoy the moment.
-    Press play below to choose your favorite and let the music set a relaxed pace for your day. 🎶
-    </p>
-    <div class="hobby-images">
-      <img src="Image/nature.jpg" alt="Nature view" class="hobby-image">
-    </div>
-
-    <!-- Music Button Section -->
-    <div class="music-control">
-      <button id="musicBtn1">▶ Play "For Always"</button>
-      <button id="musicBtn2">▶ Play "Back to Friends"</button>
-    </div>
-
-    <!-- This stores the music file that will be controlled using JavaScript -->
-    <audio id="Music1">
-      <source src="music/for-always.mp3" type="audio/mpeg">
-    </audio>
-
-    <audio id="Music2">
-      <source src="music/back-to-friends.mp3" type="audio/mpeg">
-    </audio>
-  </div>
-</div>
 </section>
 
 <section id="contact">
