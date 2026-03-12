@@ -31,19 +31,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ---------------- Hybrid Mobile Toggle ----------------
 function toggleElement(button, elementSelector) {
     const element = button.parentElement.querySelector(elementSelector);
-    if (element.style.display === "flex") {
-        element.style.display = "none";
+    
+    if (!element) return; // Exit if the element does not exist
+
+    // Determine correct display type
+    const isQuote = elementSelector === ".hobby-quote";
+    const currentDisplay = window.getComputedStyle(element).display;
+
+    // Toggle display based on current state
+    if (currentDisplay === "none") {
+        element.style.display = isQuote ? "block" : "flex"; // Use block for quotes, flex for images
     } else {
-        element.style.display = "flex";
+        element.style.display = "none"; // Hide the element
     }
 }
 
-// Toggle quotes/images for mobile
+// Toggle quotes for mobile
 document.querySelectorAll(".toggleQuoteBtn").forEach(button => {
     button.addEventListener("click", function() {
         toggleElement(button, ".hobby-quote");
     });
 });
+
+// Toggle images for mobile
 document.querySelectorAll(".togglePhotoBtn").forEach(button => {
     button.addEventListener("click", function() {
         toggleElement(button, ".hobby-images");
