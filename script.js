@@ -28,37 +28,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ---------------- Hybrid Mobile Toggle ----------------
-function toggleElement(button, elementSelector) {
-    const element = button.parentElement.querySelector(elementSelector);
-    
-    if (!element) return; // Exit if the element does not exist
+// Hybrid Mobile Toggle
+function toggleElement(button, selector) {
+    const element = button.parentElement.querySelector(selector);
+    if (!element) return;
 
-    // Determine correct display type
-    const isQuote = elementSelector === ".hobby-quote";
-    const currentDisplay = window.getComputedStyle(element).display;
-
-    // Toggle display based on current state
-    if (currentDisplay === "none") {
-        element.style.display = isQuote ? "block" : "flex"; // Use block for quotes, flex for images
+    // Use computed style to detect current visibility
+    const style = window.getComputedStyle(element);
+    if (style.display === "none") {
+        // Determine proper display type
+        if (selector === ".hobby-quote") {
+            element.style.display = "block";
+        } else if (selector === ".hobby-images") {
+            element.style.display = "flex";
+        }
     } else {
-        element.style.display = "none"; // Hide the element
+        element.style.display = "none";
     }
 }
 
-// Toggle quotes for mobile
-document.querySelectorAll(".toggleQuoteBtn").forEach(button => {
-    button.addEventListener("click", function() {
-        toggleElement(button, ".hobby-quote");
-    });
+// Attach toggle for quotes
+document.querySelectorAll(".toggleQuoteBtn").forEach(btn => {
+    btn.addEventListener("click", () => toggleElement(btn, ".hobby-quote"));
 });
 
-// Toggle images for mobile
-document.querySelectorAll(".togglePhotoBtn").forEach(button => {
-    button.addEventListener("click", function() {
-        toggleElement(button, ".hobby-images");
-    });
+// Attach toggle for images
+document.querySelectorAll(".togglePhotoBtn").forEach(btn => {
+    btn.addEventListener("click", () => toggleElement(btn, ".hobby-images"));
 });
+
 
 // Get audio elements and buttons
 const music1 = document.getElementById("Music1");
