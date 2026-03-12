@@ -320,7 +320,7 @@ footer{
 .card-reading:hover .hobby-quote {
     max-height: 300px;
     opacity: 1;
-  }
+    }
 
   /* Images also appear on hover */
 .card:hover .hobby-image{
@@ -355,14 +355,26 @@ nav ul li { display: block;
 .hobby-container { 
     flex-direction: column; 
     align-items: center; 
-}
+    }
 
 /* Hide quotes and images initially */
 .hobby-quote,
 .hobby-images {
     display: none;
     margin-top: 10px;
-  }
+    }
+
+/* Toggle quotes */
+.hobby-quote p {
+    max-height: none;
+    opacity: 1;
+    }
+
+/* Toggle images */
+.hobby-images .hobby-image {
+    max-height: 200px;
+    opacity: 1;
+    }
 
 /* Show buttons to toggle content on mobile */
 .toggleQuoteBtn,
@@ -377,22 +389,23 @@ nav ul li { display: block;
     cursor: pointer;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
-  }
+    } 
 
 .hobby-images .hobby-image {
     max-height:200px;
     opacity:1;
-  }
+    }
+
 .toggleQuoteBtn:hover,
 .togglePhotoBtn:hover {
     background-color: #005fcc;
-  }
+    }
 
 /* Adjust card width for small screens */
 .card {
     width: 90%;
     max-width: 340px;
-  }
+    }
 }
 
 
