@@ -194,7 +194,6 @@ section{
 }
 
 /* Hide hobby content by default */
-.hobby-quote,
 .hobby-images{
     display:none;
 }
@@ -365,8 +364,7 @@ footer{
         align-items: center; 
     }
 
-    /* Hide quotes and images initially */
-    .hobby-quote,
+    /* Hide images initially */
     .hobby-images {
         display: none;
         margin-top: 10px;
@@ -374,7 +372,6 @@ footer{
 
     /* Toggle quotes */
     .hobby-quote {
-        display: none;
         margin-top: 10px;
         opacity: 1;
         max-height: none;
