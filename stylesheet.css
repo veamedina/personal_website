@@ -365,10 +365,10 @@ nav ul li { display: block;
     }
 
 /* Toggle quotes */
-.hobby-quote p {
+.hobby-quote {
     max-height: none;
     opacity: 1;
-    }
+}
 
 /* Toggle images */
 .hobby-images .hobby-image {
