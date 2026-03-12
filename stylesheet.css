@@ -320,6 +320,7 @@ footer{
     .card-reading:hover .hobby-quote {
         max-height: 300px;
         opacity: 1;
+        display: block;
     }
 
     /* Images also appear on hover */
@@ -369,6 +370,8 @@ footer{
     .hobby-quote {
         display: none;
         margin-top: 10px;
+        opacity: 1;
+        max-height: none;
     }
 
     /* Toggle images */
