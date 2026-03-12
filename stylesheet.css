@@ -149,6 +149,7 @@ section{
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s;
+    font-family: 'Nunito', sans-serif;
 }
 
 .card-about .fun-fact button:hover {
