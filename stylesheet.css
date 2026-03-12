@@ -363,8 +363,8 @@ nav ul li { display: block;
 }
 
 /* Hide quotes and images initially */
-.quoteText,
-.imageContainer {
+.hobby-quote,
+.hobby-images {
     display: none;
     margin-top: 10px;
   }

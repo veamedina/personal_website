@@ -31,10 +31,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ---------------- Hybrid Mobile Toggle ----------------
 function toggleElement(button, elementSelector) {
     const element = button.parentElement.querySelector(elementSelector);
-    if (element.style.display === "block") {
+    if (element.style.display === "flex") {
         element.style.display = "none";
     } else {
-        element.style.display = "block";
+        element.style.display = "flex";
     }
 }
 
