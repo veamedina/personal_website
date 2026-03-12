@@ -58,7 +58,7 @@ btn2.addEventListener("click", function(){
   stopOther(music2, music1, btn1);
   if(music2.paused){
     music2.play();
-    btn2.textContent = '⏸ Pause "Perfect"';
+    btn2.textContent = '⏸ Pause "Back to Friends"';
   } else {
     music2.pause();
     btn2.textContent = '▶ Play "Back to Friends"';
