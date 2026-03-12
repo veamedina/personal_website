@@ -27,3 +27,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Get the audio element from the HTML using its ID
+const music = document.getElementById("relaxMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+// Add an event listener so the button responds when clicked
+musicBtn.addEventListener("click", function(){
+
+// Check if the music is currently paused
+if(music.paused){
+    music.play();
+    musicBtn.textContent = "⏸ Pause Music";
+
+} else {
+    // If music is already playing, pause it
+    music.pause();
+    musicBtn.textContent = "▶ Play Relaxing Music";
+}
+
+});

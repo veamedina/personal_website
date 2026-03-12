@@ -175,7 +175,7 @@ section{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 250px;
+    width: 280px;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
 }
@@ -188,6 +188,7 @@ section{
 .card p{
     line-height: 1.7;
     color: #444;
+    overflow-wrap: break-word;
 }
 
 /* Quotes hover effect */
@@ -236,6 +237,26 @@ section{
     opacity:1;
 }
 
+/* Container for the music button inside the Unwind card */
+.music-control{
+margin-top:15px;
+text-align:center;
+}
+
+.music-control button{
+padding:8px 15px;
+border:none;
+border-radius:20px;
+background:#6C8CD5;
+color:white;
+font-family:'Nunito', sans-serif;
+cursor:pointer;
+}
+
+/* Button hover effect */
+.music-control button:hover{
+background:#4f6fb8;
+}
 
 /* Contact Section */
 #contact{
@@ -254,6 +275,34 @@ section{
 
 #contact a:hover{
     color:#0077ff;
+}
+
+.contact-card {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 340px;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.contact-card a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-card a:hover {
+    color: #0077ff;
 }
 
 /* Footer */
