@@ -193,6 +193,12 @@ section{
     overflow-wrap: break-word;
 }
 
+/* Hide hobby content by default */
+.hobby-quote,
+.hobby-images{
+    display:none;
+}
+
 /* Quotes hover effect */
 .hobby-quote {
   max-height: 0;
@@ -211,12 +217,6 @@ section{
     color: #555;
 }
 
-/* Show quotes when hovering the Reading card */
-.card-reading:hover .hobby-quote {
-  max-height: 300px;
-  opacity: 1;
-}
-
 /* Hobby Images Hover */
 .hobby-images{
     display: flex;
@@ -232,11 +232,6 @@ section{
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-
-.card:hover .hobby-image{
-    max-height:200px;
-    opacity:1;
 }
 
 /* Container for the music button inside the music card */

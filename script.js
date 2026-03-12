@@ -30,21 +30,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Hybrid Mobile Toggle
 function toggleElement(button, selector) {
-    const element = button.parentElement.querySelector(selector);
-    if (!element) return;
+  const element = button.parentElement.querySelector(selector);
 
-    // Use computed style to detect current visibility
-    const style = window.getComputedStyle(element);
-    if (style.display === "none") {
-        // Determine proper display type
-        if (selector === ".hobby-quote") {
-            element.style.display = "block";
-        } else if (selector === ".hobby-images") {
-            element.style.display = "flex";
-        }
-    } else {
-        element.style.display = "none";
-    }
+  if (element.style.display === "none" || element.style.display === "") {
+    element.style.display = selector === ".hobby-images" ? "flex" : "block";
+  } else {
+    element.style.display = "none";
+  }
 }
 
 // Attach toggle for quotes
