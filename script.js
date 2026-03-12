@@ -32,7 +32,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function toggleElement(button, selector) {
   const element = button.parentElement.querySelector(selector);
 
-  if (element.style.display === "none" || element.style.display === "") {
+  const style = window.getComputedStyle(element);
+
+  if (style.display === "none") {
     element.style.display = selector === ".hobby-images" ? "flex" : "block";
   } else {
     element.style.display = "none";
