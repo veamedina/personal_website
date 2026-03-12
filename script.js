@@ -61,6 +61,6 @@ btn2.addEventListener("click", function(){
     btn2.textContent = '⏸ Pause "Perfect"';
   } else {
     music2.pause();
-    btn2.textContent = '▶ Play "Perfect"';
+    btn2.textContent = '▶ Play "Back to Friends"';
   }
 });
