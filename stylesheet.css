@@ -366,6 +366,8 @@ nav ul li { display: block;
 
 /* Toggle quotes */
 .hobby-quote {
+    display: none;
+    margin-top: 10px;
     max-height: none;
     opacity: 1;
 }
@@ -391,10 +393,7 @@ nav ul li { display: block;
     font-family: 'Nunito', sans-serif;
     } 
 
-.hobby-images .hobby-image {
-    max-height:200px;
-    opacity:1;
-    }
+
 
 .toggleQuoteBtn:hover,
 .togglePhotoBtn:hover {
