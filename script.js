@@ -44,7 +44,13 @@ function toggleElement(button, selector) {
 
 // Attach toggle for quotes
 document.querySelectorAll(".toggleQuoteBtn").forEach(btn => {
-    btn.addEventListener("click", () => toggleElement(btn, ".hobby-quote"));
+  btn.addEventListener("click", () => {
+    const card = btn.closest('.card');
+    if (!card) return;
+    const quote = card.querySelector('.hobby-quote');
+    if (!quote) return;
+    quote.classList.toggle('show');
+  });
 });
 
 // Attach toggle for images

@@ -217,6 +217,11 @@ section{
     color: #555;
 }
 
+.hobby-quote.show {
+    max-height: 500px;
+    opacity: 1;
+}
+
 /* Hobby Images Hover */
 .hobby-images{
     display: flex;
