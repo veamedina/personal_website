@@ -239,18 +239,22 @@ section{
 
 /* Container for the music button inside the Unwind card */
 .music-control{
-margin-top:15px;
-text-align:center;
+    margin-top:15px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .music-control button{
-padding:8px 15px;
-border:none;
-border-radius:20px;
-background:#6C8CD5;
-color:white;
-font-family:'Nunito', sans-serif;
-cursor:pointer;
+    padding:8px 15px;
+    border:none;
+    border-radius:20px;
+    background:#6C8CD5;
+    color:white;
+    font-family:'Nunito', sans-serif;
+    cursor:pointer;
 }
 
 /* Button hover effect */

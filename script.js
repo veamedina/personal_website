@@ -27,23 +27,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+// Get audio elements and buttons
+const music1 = document.getElementById("Music1");
+const music2 = document.getElementById("Music2");
+const btn1 = document.getElementById("musicBtn1");
+const btn2 = document.getElementById("musicBtn2");
 
-// Get the audio element from the HTML using its ID
-const music = document.getElementById("relaxMusic");
-const musicBtn = document.getElementById("musicBtn");
-
-// Add an event listener so the button responds when clicked
-musicBtn.addEventListener("click", function(){
-
-// Check if the music is currently paused
-if(music.paused){
-    music.play();
-    musicBtn.textContent = "⏸ Pause Music";
-
-} else {
-    // If music is already playing, pause it
-    music.pause();
-    musicBtn.textContent = "▶ Play Relaxing Music";
+// Function to stop other music when one plays
+function stopOther(current, other, otherBtn){
+  if(!other.paused){
+    other.pause();
+    otherBtn.textContent = `▶ Play ${otherBtn.textContent.split('"')[1]}`;
+  }
 }
 
+// Button 1 toggle
+btn1.addEventListener("click", function(){
+  stopOther(music1, music2, btn2);
+  if(music1.paused){
+    music1.play();
+    btn1.textContent = '⏸ Pause "For Always"';
+  } else {
+    music1.pause();
+    btn1.textContent = '▶ Play "For Always"';
+  }
+});
+
+// Button 2 toggle
+btn2.addEventListener("click", function(){
+  stopOther(music2, music1, btn1);
+  if(music2.paused){
+    music2.play();
+    btn2.textContent = '⏸ Pause "Perfect"';
+  } else {
+    music2.pause();
+    btn2.textContent = '▶ Play "Perfect"';
+  }
 });
