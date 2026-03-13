@@ -26,6 +26,7 @@ This project is a **personal profile website** built using **HTML, CSS, and Java
 - Implemented **play/pause buttons** for each track  
 - Fixed image paths and improved responsive design for hobby cards
 - Enhanced mobile experience with toggle buttons for quotes and images.
+- Social media URLs are placeholders **except for LinkedIn**
 
 ## Author
 **Veatrix Marinielle Medina**  
