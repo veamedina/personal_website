@@ -320,7 +320,6 @@ footer{
         max-height: 500px;
         opacity: 1;
         display: block;
-        transition: max-height 0.4s ease, opacity 0.4s ease;
     }
 
     /* Images also appear on hover */
@@ -359,29 +358,22 @@ footer{
         align-items: center; 
     }
 
+    /* Toggle quotes */
+    .hobby-quote {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .hobby-quote.show {
+        display: block;
+    }
+
     /* Hide images initially */
     .hobby-images {
         display: none;
         margin-top: 10px;
         flex-direction: column;
         gap: 10px;
-    }
-
-    
-    /* Toggle quotes */
-    .hobby-quote {
-        display: none;
-        margin-top: 10px;
-        opacity: 0;
-        max-height: 0px;
-        overflow: hidden;
-        transition: max-height 0.4s ease, opacity 0.4s ease;
-    }
-
-    .hobby-quote.show {
-        max-height: 500px;
-        opacity: 1;
-        display: block;
     }
 
     /* Toggle images */
