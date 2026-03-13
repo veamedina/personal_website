@@ -193,11 +193,6 @@ section{
     overflow-wrap: break-word;
 }
 
-/* Hide hobby content by default */
-.hobby-images{
-    display:none;
-}
-
 /* Quotes hover effect */
 .hobby-quote {
   max-height: 0;
@@ -368,6 +363,8 @@ footer{
     .hobby-images {
         display: none;
         margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
     }
 
     
