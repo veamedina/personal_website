@@ -24,7 +24,8 @@ This project is a **personal profile website** built using **HTML, CSS, and Java
 - Added **Random Fun Fact generator*
 - Added audio tracks for Relaxation and Music Card
 - Implemented **play/pause buttons** for each track  
-- Fixed image paths and improved responsive design for hobby cards 
+- Fixed image paths and improved responsive design for hobby cards
+- Enhanced mobile experience with toggle buttons for quotes and images.
 
 ## Author
 **Veatrix Marinielle Medina**  
